@@ -1,0 +1,12 @@
+<div>
+    <h1>PrasChat</h1>
+    <div *ngFor="let msg of messages">
+      <b>{{ msg.sender }}:</b> {{ msg.content }} ({{ msg.timestamp | date: 'short' }})
+      <button (click)="deleteMessage(msg.id)">Delete</button>
+    </div>
+    <br />
+    <input type="text" [(ngModel)]="newMessage.sender" placeholder="Your Name" />
+    <input type="text" [(ngModel)]="newMessage.content" placeholder="Type your message..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+  

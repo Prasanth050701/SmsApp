@@ -1,0 +1,39 @@
+div {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Chat messages */
+  div > div {
+    margin-bottom: 10px;
+  }
+  
+  /* Sender's name */
+  div > div b {
+    color: #007bff;
+  }
+  
+  /* Timestamp */
+  div > div span {
+    color: #666;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  /* Delete button */
+  div > div button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Delete button on hover */
+  div > div button:hover {
+    background-color: #c82333;
+  }
